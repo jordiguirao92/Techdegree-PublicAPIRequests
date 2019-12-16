@@ -1,11 +1,3 @@
-/*Remember: 
-res => res.json()
-===
-function(res){
-    return res.json();
-}
-*/
-
 
 //API REQUEST
 
@@ -92,7 +84,7 @@ function addUsers(usersObject){
                 <img class="modal-img" src="${personObject.picture.large}" alt="profile picture">
                  <h3 id="name" class="modal-name cap">${personObject.name.first} ${personObject.name.last}</h3>
                 <p class="modal-text">${personObject.email}</p>
-                <p class="modal-text cap">${personObject.location.city}/p>
+                <p class="modal-text cap">${personObject.location.city}</p>
                 <hr>
                 <p class="modal-text">${personObject.cell}</p>
                 <p class="modal-text">${personObject.location.street.number} ${personObject.location.street.name}, ${personObject.location.country}, ${personObject.location.postcode}</p>
@@ -184,7 +176,14 @@ function searchUser (stringInput) {
 }
 
 
- 
+ /*Remember: 
+res => res.json()
+===
+function(res){
+    return res.json();
+}
+*/
+
 
  
 
